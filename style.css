@@ -210,8 +210,9 @@
   }
   
   /* Add shadow header */
-  
-  
+  .shadow-header{
+      box-shadow: 0 4px 16px hsla(22, 100%, 8%, .1)
+  }
   /* Active link */
   
   
@@ -245,7 +246,67 @@
       right: 1rem;
       opacity: .5;
   }
-  
+  .home__images{
+      position: relative;
+      display: grid;
+      justify-items: center;
+      justify-self: center;
+  }
+  .home__ingrediend{
+      width: 60px;
+      filter: var(--shadow-small-img);
+      position: absolute;
+      z-index: 2;
+  }
+  .home__burger,
+  .home__dish{
+      filter: var(--shadow-small-img);
+  }
+
+  .home__burger{
+      width: 280px;
+      z-index: 2;
+  }
+  .home__dish{
+      max-width: initial;
+      width: 320px;
+      position: absolute;
+      bottom: -2.5rem;
+  }
+
+  .home__potato-1{
+      left: -1rem;
+      top: .75rem;
+  }
+
+  .home__potato-2{
+    right:-.75rem;
+    bottom: -2rem;
+    rotate: 90deg;
+ }
+
+ .home__tomato-1{
+     width: 40px;
+     top: -1rem;
+     right: 6rem;
+ }
+
+ .home__tomato-2{
+     width: 40px;
+     left: 5.5rem;
+     bottom: -1.5rem;
+ }
+
+ .home__lettuce-1{
+     top: 2.5rem;
+     right: -2rem;
+     transform: scaleX(-1)
+ }
+
+ .home__lettuce-2{
+     left: -2rem;
+     bottom: 1rem;
+ }
   /*=============== BUTTON ===============*/
   .button{
       width: 8rem;
@@ -259,7 +320,9 @@
       align-items: center;
       justify-content: center;
   }
-  
+  .button:hover{
+      box-shadow: 0 8px 24px hsl(22, 100%, 8% .2);
+  }
   /*=============== RECIPE ===============*/
   
   
